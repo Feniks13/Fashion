@@ -1,0 +1,30 @@
+.menu {
+ ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   a {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $black;
+    line-height: 23px;
+    border-bottom: 1px solid transparent;
+    letter-spacing: 0.96px;
+    margin: 0 3px;
+    &:hover {
+     border-bottom-color: $black;
+    }
+   }
+ }
+}
+
+@media (max-width: 768px) {
+ .menu {
+  & ul {
+   justify-content: space-around;
+   margin-bottom: 10px;
+  }
+ }
+}

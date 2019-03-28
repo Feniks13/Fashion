@@ -1,0 +1,89 @@
+.blog {
+ margin: 90px auto -160px;
+ .blog__title {
+  @include title();
+ }
+ .blog__block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+
+ }
+ .blog__element {
+  flex-basis: 48.8%;
+
+  img {
+   display: block;
+   max-width: 100%;
+   margin: 0 auto;
+  }
+ }
+ .blog__info {
+  text-align: center;
+  background: $white;
+  margin: 0 auto;
+  padding: 16px 0;
+  width: calc(100% - 70px);
+  transform: translateY(-50%);
+
+  p {
+   margin-bottom: 4px;
+  }
+ }
+ .blog__topic {
+  a {
+   font-size: 18px;
+   line-height: 18px;
+   letter-spacing: 0.9px;
+   font-weight: 600;
+   color: #2d2b27;
+   text-decoration: none;
+   &:hover {
+    text-decoration: underline;
+   }
+  }
+ }
+ .blog__date {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  color: #7d7d7d;
+  font-style: italic}
+
+ .owl-nav {
+  button.owl-prev, button.owl-next {
+   background: url("../img/sprite-arrow2.png") 0 0 no-repeat;
+   width: 49px;
+   height: 49px;
+   border: none;
+   box-shadow: none;
+   position: absolute;
+   top: calc(50% - 49px);
+   left: -65px;
+   transform: translateY(-50%);
+  }
+  button.owl-prev:hover{
+   background-position: 0 -49px;
+  }
+  button.owl-next {
+   background-position: -49px 0;
+   left: auto;
+   right: -65px;
+   &:hover {
+    background-position: -49px -49px;
+   }
+  }
+ }
+}
+
+@media (max-width: 1300px) {
+ .blog {
+  width: 100%;
+ }
+}
+@media (max-width: 1080px) {
+ .blog {
+  margin: 35px auto -160px;
+ }
+}
