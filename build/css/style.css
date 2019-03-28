@@ -737,6 +737,7 @@ p {
   margin-bottom: 70px; }
   .featured .featured__title {
     font-size: 26px;
+    line-height: 28px;
     letter-spacing: 2.6px;
     font-weight: 600;
     text-transform: uppercase;
