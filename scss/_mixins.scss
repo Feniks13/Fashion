@@ -27,9 +27,10 @@
  }
 }
 
-@mixin title($fs: 26px, $ls: 2.6px, $fw: 600){
+@mixin title($fs: 26px, $ls: 2.6px, $lh: 28px, $fw: 600){
  font-size: $fs;
  letter-spacing: $ls;
+ line-height: $lh;
  font-weight: $fw;
  text-transform: uppercase;
  text-align: center;
